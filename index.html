@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<meta property='og:title' content='A Culturally-diverse Multilingual Multimodal Video Benchmark & Model'/>
+<meta property='og:image' content=''/>
+<meta property='og:description' content=''/>
+<meta property='og:url' content='https://github.com/mbzuai-oryx/ViMUL'/>
+<meta property='og:image:width' content='1200' />
+<meta property='og:image:height' content='663' />
+<!-- TYPE BELOW IS PROBABLY: 'website' or 'article' or look on https://ogp.me/#types -->
+<meta property="og:type" content='website'/>
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9VZKE74FPW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-9VZKE74FPW');
+</script>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="A Culturally-diverse Multilingual Multimodal Video Benchmark & Model">
+  <meta name="keywords" content="Multilingual Multimodal Benchmark, 14 languages, Cultural Multilingual Benchmark">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A Culturally-diverse Multilingual Multimodal Video Benchmark & Model</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/tab_gallery.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+  <link rel="stylesheet" href="juxtapose/css/juxtapose.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  <script src="./static/js/magnifier.js"></script>
+  <link href="https://fonts.cdnfonts.com/css/menlo" rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/image_card_fader.css">
+  <link rel="stylesheet" href="./static/css/image_card_slider.css">
+
+</head>
+
+<style>
+  @import url('https://fonts.cdnfonts.com/css/menlo');
+</style>
+
+
+<body>
+  <section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-2 publication-title">A Culturally-diverse Multilingual Multimodal Video Benchmark & Model</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><a href="">Bhuiyan Sanjid Shafique</a><sup>1♠</sup>,</span>
+            <span class="author-block"><a href="https://ashmalvayani.github.io/">Ashmal Vayani</a><sup>1,2♠</sup>,</span>
+            <span class="author-block"><a href="https://scholar.google.com/citations?user=vTy9Te8AAAAJ&hl=en">Muhammad Maaz</a><sup>1♠</sup>,</span>
+            <span class="author-block"><a href="https://scholar.google.com/citations?user=yhDdEuEAAAAJ&hl=en">Hanoona Abdul Rasheed</a><sup>1♠</sup>,</span>
+            <span class="author-block"><a href="https://dinuransika.github.io/">Dinura Dissanayake</a><sup>1♠</sup>,</span>
+            <span class="author-block"><a href="https://scholar.google.com/citations?user=GJp0keYAAAAJ&hl=en">Mohammed Irfan</a><sup>1♠</sup>,</span>
+
+
+            <span class="author-block"><a href="">Yahya Hmaiti</a>,</span>
+            <span class="author-block"><a href="">Go Inoue</a>,</span>
+            <span class="author-block"><a href="">Jean Lahoud</a>,</span>
+            <span class="author-block"><a href="">Md. Safirur Rashid</a>,</span>
+            <span class="author-block"><a href="">Shadid Quasem</a>,</span>
+            <span class="author-block"><a href="">Maheen Fatima</a>,</span>
+            <span class="author-block"><a href="">Franco Vidal</a>,</span>
+            <span class="author-block"><a href="">Mykola Maslych</a>,</span>
+            <span class="author-block"><a href="">Ketan More</a>,</span>
+            <span class="author-block"><a href="">Sanoojan Baliah</a>,</span>
+            <span class="author-block"><a href="">Hasindri Watawana</a>,</span>
+            <span class="author-block"><a href="">Yuhao Li</a>,</span>
+            <span class="author-block"><a href="">Fabian Farestam</a>,</span>
+            <span class="author-block"><a href="">Leon Schaller</a>,</span>
+            <span class="author-block"><a href="">Roman Tymtsiv</a>,</span>
+            <span class="author-block"><a href="">Simon Weber</a>,</span>
+            
+                
+            <!-- <br> -->
+              
+            <span class="author-block"><a href="https://scholar.google.com/citations?hl=en&user=bZ3YBRcAAAAJ">Hisham Cholakkal</a><sup>1♠</sup>,</span>
+            <span class="author-block"><a href="https://scholar.google.com/citations?user=-9ifK0cAAAAJ&hl=en">Ivan Laptev</a><sup>1♠</sup>,</span>
+            <span class="author-block"><a href="https://scholar.google.com/citations?user=7aEF5cQAAAAJ&hl=en">Shin’ichi Satoh</a><sup>4♠</sup>,</span>
+            <span class="author-block"><a href="https://scholar.google.com/citations?user=lkWfR08AAAAJ&hl=en">Michael Felsberg</a><sup>6♠</sup>,</span>
+            <span class="author-block"><a href="https://scholar.google.com/citations?user=p8gsO3gAAAAJ&hl=en&oi=ao">Mubarak Shah</a><sup>2,3♠</sup>,</span>
+            <span class="author-block"><a href="https://salman-h-khan.github.io/">Salman Khan</a><sup>1,5♠</sup>,</span>
+            <span class="author-block"><a href="https://sites.google.com/view/fahadkhans/home">Fahad Shahbaz Khan</a><sup>1,6♠</sup></span>
+
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>♠</sup> Core Authors</span>
+            <br>
+            <span class="author-block"><sup>1</sup>Mohamed bin Zayed University of AI,</span>
+            <span class="author-block"><sup>2</sup>University of Central Florida,</span>
+            <span class="author-block"><sup>3</sup>Amazon,</span>
+            <span class="author-block"><sup>4</sup>National Institute of Informatics,</span>
+                <br>
+            <span class="author-block"><sup>5</sup>Australian National University,</span>
+            <span class="author-block"><sup>6</sup>Linkoping University,</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+                               
+                <span class="link-block">
+                  <a href="https://huggingface.co/datasets/MBZUAI/MINT" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-database"></i>
+                    </span>
+                    <span>Dataset</span>
+                  </a>
+                </span>
+              <span class="link-block">
+                <a href="https://huggingface.co/datasets/MBZUAI/MINT" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+
+<!--
+              <span class="link-block">
+                <a href="https://drive.google.com/file/d/1B2yynH-o1z1UvMCl32XoY3pVIkAxgN0P/view?usp=sharing"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-image"></i>
+                  </span>
+                  <span>Poster</span>
+                </a>
+              </span>
+-->
+
+
+<!--
+              <span class="link-block">
+                <a href="https://docs.google.com/presentation/d/10lUrfoC-R1lgl0Dx0EYpx1ID3AqLGnRO/edit?usp=sharing&ouid=103839181464334047856&rtpof=true&sd=true"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-chalkboard"></i>
+                  </span>
+                  <span>Presentation</span>
+                </a>
+              </span>
+-->
+
+<!--
+              <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=fvcX4yi5AiY&list=PLtIMlmzwbtty7ie1quj1fq2QoTRK9eWHX&ab_channel=AshmalVayani"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-video"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+-->
+
+
+              <span class="link-block">
+                <a href="#bibtex"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-obp"></i>
+                  </span>
+                  <span>BibTex</span>
+                </a>
+              </span>
+
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+        <p align="justify"> 
+            Motivated by the rapid progress of large multimodal models (LMMs) in video-language tasks and their current limitations in handling cultural and linguistic diversity, we introduce ViMUL-Bench—a multilingual video QA benchmark spanning 14 languages that collectively represent over two-thirds of the global population. Unlike prior datasets, ViMUL-Bench emphasizes culturally grounded understanding, covering diverse domains such as festivals, customs, food, and heritage. It enables comprehensive evaluation of LMMs across both high- and low-resource languages, pushing the field toward more inclusive, globally relevant, and culturally aware video-language models.</p>
+    
+    <br>
+    <img src="./static/images/introfigure_2.jpg" >
+<!--
+        <div class="content has-text-justified">
+            <p align="justify"> <b>Figure:</b> ViMUL-Bench consists of carefully curated videos spanning 14 languages, with 8K manually verified annotations by native experts. It covers 15 diverse domains, incorporating real-world cultural elements such as regional landmarks, local cuisines, and traditional festivals. Additionally, we introduce <b>ViMUL</b>, a multilingual baseline for general and cultural video comprehension. Qualitative examples (top: Sinhala, bottom: Bengali) show that ViMUL performs favorably against recent vidLMMs in cultural inclusivity and overall understanding (errors in <span style="color: red;">red</span>, correct answers in <span style="color: green;">green</span>). ViMUL-Bench supports diverse question formats, including MCQs and both short/long open-ended VQAs.
+            </p>
+            
+              <div style="margin-top: 0.5em;">
+                <img src="./static/images/logos/Vila.jpg" alt="ViLA" style="height: 1.5em; margin-right: 8px;">
+                <img src="./static/images/logos/VideoChat.jpg" alt="Video-Chat2" style="height: 1.5em; margin-right: 8px;">
+                <img src="./static/images/logos/VideoChatGPT.jpg" alt="Video-ChatGPT" style="height: 1.5em; margin-right: 8px;">
+                <img src="./static/images/logos/LLaVA_OneVision_icon_2.jpg" alt="LLaVA-OneVision-Qwen (OQ)" style="height: 1.5em; margin-right: 8px;">
+                <img src="./static/images/logos/LLaVA_NeXT_Video_icon_2.jpg" alt="LLaVA-Next (LN)" style="height: 1.5em; margin-right: 8px;">
+                <img src="./static/images/logos/ViMUL_icon_2.jpg" alt="Our ViMUL" style="height: 1.5em;">
+              </div>
+            
+        </div>
+-->
+        
+        <div class="content has-text-justified">
+          <p align="justify">
+            <b>Figure:</b> ViMUL-Bench consists of carefully curated videos spanning 14 languages, with 8K manually verified annotations by native experts. It covers 15 diverse domains, incorporating real-world cultural elements such as regional landmarks, local cuisines, and traditional festivals. Additionally, we introduce <b>ViMUL</b>, a multilingual baseline for general and cultural video comprehension. Qualitative examples (top: Sinhala, bottom: Bengali) show that ViMUL performs favorably against recent vidLMMs in cultural inclusivity and overall understanding (errors in <span style="color: red;">red</span>, correct answers in <span style="color: green;">green</span>). ViMUL-Bench supports diverse question formats, including MCQs and both short/long open-ended VQAs.
+          </p>
+
+          <style>
+            .logo-container {
+              display: flex;
+              justify-content: center;
+              flex-wrap: wrap;
+              gap: 20px;
+              margin-top: 1em;
+            }
+            .logo-item {
+              text-align: center;
+              font-size: 0.85em;
+            }
+            .logo-item img {
+              height: 1.5em;
+              display: block;
+              margin: 0 auto 5px;
+            }
+          </style>
+
+          <div class="logo-container">
+            <div class="logo-item">
+              <img src="./static/images/logos/Vila.jpg" alt="ViLA">
+              <div>ViLA</div>
+            </div>
+            <div class="logo-item">
+              <img src="./static/images/logos/VideoChat.jpg" alt="Video-Chat2">
+              <div>Video-Chat2</div>
+            </div>
+            <div class="logo-item">
+              <img src="./static/images/logos/VideoChatGPT.jpg" alt="Video-ChatGPT">
+              <div>Video-ChatGPT</div>
+            </div>
+            <div class="logo-item">
+              <img src="./static/images/logos/LLaVA_OneVision_icon_2.jpg" alt="LLaVA-OneVision-Qwen (OQ)">
+              <div>LLaVA-OneVision</div>
+            </div>
+            <div class="logo-item">
+              <img src="./static/images/logos/LLaVA_NeXT_Video_icon_2.jpg" alt="LLaVA-Next (LN)">
+              <div>LLaVA-Next</div>
+            </div>
+            <div class="logo-item">
+              <img src="./static/images/logos/ViMUL_icon_2.jpg" alt="Our ViMUL">
+              <div>ViMUL (Ours)</div>
+            </div>
+          </div>
+        </div>
+        
+    </div>
+
+
+    <br>
+    
+  </div>
+
+</section>
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop has-text-centered">
+                 <!-- Visual Effects. -->
+      <h2 class="title is-3">Abstract</h2>
+      <div class="content has-text-justified">
+        <p>
+            Large multimodal models (LMMs) have recently gained attention due to their effectiveness to understand and generate descriptions of visual content. Most existing LMMs are in English language. While few recent works explore multilingual image LMMs, to the best of our knowledge, moving beyond the English language for cultural and linguistic inclusivity is yet to be investigated in the context of video LMMs. In pursuit of more inclusive video LMMs, we introduce a multilingual Video LMM benchmark, named <i>ViMUL-Bench</i>, to evaluate Video LMMs across 14 languages, including both low and high-resource languages: English, Chinese, Spanish, French, German, Hindi, Arabic, Russian, Bengali, Urdu, Sinhala, Tamil, Swedish, and Japanese. Our <i>ViMUL-Bench</i> is designed to rigorously test video LMMs across 15 categories including eight culturally diverse categories, ranging from lifestyles and festivals to foods and rituals and from local landmarks to prominent cultural personalities. <i>ViMUL-Bench</i> comprises both open-ended (short and long-form) and multiple-choice questions spanning various video durations (short, medium, and long) with 8k samples that are manually verified by native language speakers. In addition, we also introduce a machine translated multilingual video training set comprising 1.2 million samples and develop a simple multilingual video LMM, named <i>ViMUL</i>, that is shown to provide a better tradeoff between high-and low-resource languages for video understanding. We hope our <i>ViMUL-Bench</i> and multilingual video LMM along with a large-scale multilingual video training set will help ease future research in developing cultural and linguistic inclusive multilingual video LMMs. Our proposed benchmark, video LMM and training data will be publicly released.<br>
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+</section>
+
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">ViMUL enables inclusive evaluation of multilingual multimodal models for culturally grounded video understanding.</h2>
+        <div class="content has-text-justified">
+          <p>
+          <h5> <b> Main contributions: </b></h5>
+           <ol>
+             <li> <b>ViMUL-Bench: </b> We introduce ViMUL-Bench, the first benchmark for multilingual and multicultural video question answering. It spans 14 languages, including low-resource ones like Sinhala, Urdu, and Tamil, and covers 15 domains, such as traditional festivals, foods, rituals, and landmarks—culminating in over 8,000 manually verified QA pairs.</li>
+            <li><b>Culturally Curated Annotations: </b>QA pairs are curated and verified by native speakers to ensure authenticity and cultural relevance, particularly in non-English and low-resource settings. Cultural videos are sourced using language-country-topic triplets and vetted for quality.</li>
+            <li><b>Multilingual Video LMM (ViMUL): </b>We present ViMUL, a multilingual video-language model trained on 1.2 million machine-translated QA pairs. It achieves strong performance across both high- and low-resource languages, setting a new open-source baseline for cross-lingual, culturally aware video understanding.</li>
+
+           </ol>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+  </div>
+</section>
+
+<section class="section">
+  
+    <!--/ Matting. -->
+    <div class="container is-max-desktop">
+    
+        
+        <div class="columns is-centered">
+          <div class="column is-full-width">
+            <h2 class="title is-3 has-text-centered">ViMUL-LLM Architecture Overview</h2>
+
+            <div class="content has-text-centered">
+                <img src="./static/images/mint_block_diagram.jpg"  style="max-width:90%">
+                                      <p class="content has-text-justified">
+                <b> <span>Figure: </span></b>ViMUL is designed to comprehend and generate content in 14 different languages: Arabic, Bengali, Chinese, English, French, German, Hindi, Japanese, Russian, Sinhala, Spanish, Swedish, Tamil, and Urdu, covering at least two-thirds of the global population. The model employs a vision encoder to process video frames, followed by a vision-to language projector and an LLM. The projected features are then concatenated with the user query and fed into the LLM to generate a response.
+              </p>
+            </div>
+            <div class="content has-text-justified">
+              <p>
+<!--                <b>Overview of ViMUL-Bench Dataset.</b>-->
+                ViMUL LLM architecture is derived from LLaVA-OneVision. It features a three-stage architecture: (1) a frozen SigLIP visual encoder, (2) a two-layer MLP vision-language projector, and (3) a decoder-only multilingual LLM based on Qwen-2.0. Input video frames are sampled at 1 FPS and passed through the SigLIP encoder. The output features are pooled and projected into the language model’s embedding space. These are concatenated with multilingual query tokens and fed into the LLM to generate culturally grounded responses. ViMUL is trained end-to-end using a next-token prediction loss over 1.2 million QA pairs across 14 languages, combining both open-ended and multiple-choice supervision via multilingual instruction tuning. This enables robust generalization across both high- and low-resource languages.
+              </p>
+
+
+            </div>
+
+          </div>
+        </div>
+        
+        
+    <!-- Latent space editing applications -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3 has-text-centered">ViMUL-Bench Dataset Overview</h2>
+        
+        <div class="content has-text-centered">
+            <img src="./static/images/Comparison_Table.jpg"  style="max-width:90%">
+                                  <p class="content has-text-justified">
+            <b>Table:</b> Comparison of video LMM benchmarks emphasizing multilingual and cultural understanding. Domains represent the aspects covered by each dataset for different languages. Annotation Type is categorized as follows: Human - Questions were created in the local language. Human+Auto – Questions were generated or translated using GPT-4/Google API and later validated by human experts. Auto: Questions were generated or translated automatically without human validation. ‘-’ indicates that information is not available.
+          </p>
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            <b>Overview of ViMUL-Bench Dataset.</b>
+            ViMUL-Bench consists of 8,025 culturally grounded and linguistically diverse video QA pairs across 15 categories in 14 languages, spanning high- and low-resource languages. It incorporates video content from diverse regions and cultural settings, using 9 language scripts and covering multiple language families. ViMUL-Bench emphasizes spatio-temporal and cultural reasoning in real-world videos across the following categories:
+          </p>
+
+          <style>
+            .two-columns {
+              display: flex;
+              justify-content: space-between;
+              gap: 40px;
+            }
+            .column {
+              flex: 1;
+            }
+            .category-list {
+              list-style: decimal;
+              padding-left: 20px;
+            }
+            .category-list li {
+              margin-bottom: -5px;
+            }
+          </style>
+
+          <div class="two-columns">
+            <div class="column">
+              <p><b>Cultural Categories</b></p>
+              <ol class="category-list">
+                <li>Lifestyle & Customs</li>
+                <li>Festivals</li>
+                <li>Food & Cuisine</li>
+                <li>Sports</li>
+                <li>Architecture & Landmarks</li>
+                <li>Notable Public Figures</li>
+                <li>Media & Entertainment</li>
+                <li>Art & Literature</li>
+              </ol>
+            </div>
+
+            <div class="column">
+              <p><b>Generic Categories</b></p>
+              <ol class="category-list">
+                <li>Artistic Performance</li>
+                <li>Digital Content</li>
+                <li>Knowledge</li>
+                <li>Life Record</li>
+                <li>Sports Competition</li>
+                <li>Surveillance</li>
+                <li>Others</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+            <!--/ Matting. -->
+    <div class="container is-max-desktop">
+
+    <!-- Latent space editing applications -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3 has-text-centered">Dataset Collection and Verification Pipeline</h2>
+
+        <div class="content has-text-centered">
+            <img src="./static/images/annotation_process.jpg"  style="max-width:100%">
+                                  <p class="content has-text-justified">
+
+            <div class="content has-text-justified">
+                <p align="justify"> <b> <span>Figure</span></b>:
+            Data collection and verification pipeline. Our benchmark consists of both cultural specific video content curated from scratch <b> <span style="color: blue;">(left)</span></b> and generic Video-QA pairs sourced from existing video LMM benchmarks <b> <span style="color: blue;">(right)</span></b>. Cultural videos are scrapped using a (country, language, sub-topic) triplet and manually filtered for relevance and private information. With the help of native speakers, we create QA pairs for each language from scratch (except English), with cultural QA pairs translated into English using GPT-4o. Our ViMUL-Bench has diverse question types and features approximately 8K QA pairs in 14 languages.</p>
+            </div>
+
+
+<!--
+        <div class="content has-text-justified">
+            <h3 class="title is-4 has-text-justified">Data Statistics</h3>
+    
+            <p align="justify"> Our ViMUL-Bench dataset reflects the multilingual and cultural diversity essential for inclusive video understanding. It includes 8,025 high-quality QA pairs across 14 languages and 9 scripts, spanning both high- and low-resource settings, from 879 videos. The benchmark features 15 distinct categories (generic and cultural), and supports multiple question types, including multiple-choice and short/long open-ended formats. All samples are manually verified by native-language experts to ensure linguistic accuracy, cultural relevance, and robust multilingual coverage. </p>
+            <div class="content has-text-centered">
+            <img src="./static/images/ALM_stats.jpg" style="max-width:40%"> </div>
+            <p align="center"> <b> <span>Figure</span></b>: We present the data statistics of our ALM-Bench in the figure above.</p>
+        </div>
+-->
+            
+            
+        <div class="content has-text-justified">
+          <h3 class="title is-4 has-text-justified">Data Statistics</h3>
+
+          <p align="justify">
+            Our ViMUL-Bench dataset reflects the multilingual and cultural diversity essential for inclusive video understanding. It includes 8,025 high-quality QA pairs across 14 languages and 9 scripts, spanning both high- and low-resource settings, from 879 videos. The benchmark features 15 distinct categories (generic and cultural), and supports multiple question types, including multiple-choice and short/long open-ended formats. All samples are manually verified by native-language experts to ensure linguistic accuracy, cultural relevance, and robust multilingual coverage.
+          </p>
+
+          <style>
+            .image-row {
+              display: flex;
+              justify-content: center;
+              gap: 20px;
+              margin-top: 20px;
+              flex-wrap: wrap;
+            }
+            .image-row img {
+              max-width: 40%;
+              height: auto;
+            }
+          </style>
+
+          <div class="image-row">
+            <img src="./static/images/Language_Distribution.jpg" alt="Language Stats">
+            <img src="./static/images/Video_Category_Distribution_Cultural.jpg" alt="Cultural Stats">
+          </div>
+
+          <p align="center">
+            <b><span>Figure</span></b>: Data statistics for ViMUL-Bench where is displays the distribution of QA pairs among 14 languages <b> <span style="color: blue;">(left)</span></b> and distribution of QA pairs among 8 cultural categories <b> <span style="color: blue;">(right)</span></b>.
+          </p>
+        </div>
+
+
+
+<!--
+        <div class="content has-text-justified">
+            <div class="content has-text-centered">
+            <img src="./static/images/word_cloud.png" style="max-width:100%"> </div>
+            <p align="center"> <b> <span>Figure</span></b>: Illustration of the most frequent keywords in some categories from ALM-Bench dataset.</p>
+        </div>
+-->
+        </div>
+          
+      </div>
+    </div>
+
+    <br><br>
+
+    <div class="columns is-centered">
+      <div class="column is-full-width has-text-centered">
+        <h2 class="title is-3">Experimental results on ViMUL-Bench</h2>
+
+        <div class="content has-text-justified">
+        <p> We present our evaluations with 6 recent state-of-the-art LMMs along with ViMUL-LLM, across 14 languages, for both openended and mcq based QA pairs.</p>
+        </div>
+
+                <h3 class="title is-4 has-text-justified">Performance of Open and Closed-Source LMMs on ViMUL-Bench</h3>
+
+        <div class="content has-text-centered">
+                      <p style="text-align: justify;">
+
+In the below heatmap figure, we present results for both open-source and closed-source models, on the ViMUL-Bench. </p>
+<img src="./static/images/results_heatmap.jpg"  style="max-width:100%">
+
+<p style="text-align: justify;"> Performance comparison of video LMMs across 14 languages on ViMUL-Bench. Average accuracy is reported across all question types for each language. Each box represents a model’s accuracy for a specific language, with darker shades indicating higher accuracy. The results show that the closed-source model, GPT-4o, generally outperforms
+its open-source counterparts. In contrast to highresource languages, methods struggle on low-resource languages (e.g., Sinhala, Urdu, Tamil). Among open-source models, our ViMUL provides a better tradeoff between high and low-resource languages, achieving an overall gain of 2% over LLaVA-OneVision. </p>
+
+    </div>
+    <br/>
+    </div>
+ </div>
+</div>
+
+            <h3 class="title is-4 has-text-justified">Performance based on Low Vs High-resource languages and various categories upon ViMUL-Bench </h3>
+
+                <div class="content has-text-centered">
+
+                      <style>
+                        .image-row {
+                          display: flex;
+                          justify-content: center;
+                          gap: 20px;
+                          margin-top: 20px;
+                          flex-wrap: wrap;
+                        }
+                        .image-row img {
+                          max-width: 40%;
+                          height: auto;
+                        }
+                      </style>
+
+                      <div class="image-row">
+                        <img src="./static/images/low_vs_high_resource.jpg" alt="Language Resouce Results">
+                        <img src="./static/images/CategoryWise_RadarPlot.jpg" alt="Category Results">
+                      </div>
+
+                      <p align="center">
+                        <b><span>Figure</span></b>: Figure on the <b> <span style="color: blue;">(left)</span></b> illustrates performance comparison of open-source versus closed-source models, with a distinction between low-resource and high-resource languages in our ViMUL-Bench. On the other hand, the Figure on the <b> <span style="color: blue;">(right)</span></b> portrays the performance of different video LMMs across 15 diverse categories (both generic and cultural) in our ViMUL-Bench. The categories in black represents generic categories, and categories in blue represents the cultural categories.
+                      </p>
+                    
+                </div>
+
+
+
+
+
+        <h3 class="title is-4 has-text-justified">Qualitative examples of ViMUL-LLM on our ViMUL-Bench dataset</h3> 
+        
+        <p>
+            
+
+            <p align="justify"> <b> Success cases prediction: </b>  We present some qualitative examples for success cases by ViMUL-LLM on various language and categories.</p>
+            <div class="item item-sunflowers">
+                <img src="./static/images/ViMUL_Success_1.jpg" style="max-width:100%" align="center">
+            </div>
+            <br>
+
+
+
+
+
+</section>
+
+<!--
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title"><a id="bibtex">BibTeX</a></h2>
+    <pre><code>@misc{vayani2024alm,
+      title={All Languages Matter: Evaluating LMMs on Culturally Diverse 100 Languages}, 
+      author={Ashmal Vayani and Dinura Dissanayake and Hasindri Watawana and Noor Ahsan and Nevasini Sasikumar and Omkar Thawakar and Henok Biadglign Ademtew and Yahya Hmaiti and Amandeep Kumar and Kartik Kuckreja and Mykola Maslych and Wafa Al Ghallabi and Mihail Mihaylov and Chao Qin and Abdelrahman M Shaker and Mike Zhang and Mahardika Krisna Ihsani and Amiel Esplana and Monil Gokani and Shachar Mirkin and Harsh Singh and Ashay Srivastava and Endre Hamerlik and Fathinah Asma Izzati and Fadillah Adamsyah Maani and Sebastian Cavada and Jenny Chim and Rohit Gupta and Sanjay Manjunath and Kamila Zhumakhanova and Feno Heriniaina Rabevohitra and Azril Amirudin and Muhammad Ridzuan and Daniya Kareem and Ketan More and Kunyang Li and Pramesh Shakya and Muhammad Saad and Amirpouya Ghasemaghaei and Amirbek Djanibekov and Dilshod Azizov and Branislava Jankovic and Naman Bhatia and Alvaro Cabrera and Johan Obando-Ceron and Olympiah Otieno and Fabian Farestam and Muztoba Rabbani and Sanoojan Baliah and Santosh Sanjeev and Abduragim Shtanchaev and Maheen Fatima and Thao Nguyen and Amrin Kareem and Toluwani Aremu and Nathan Xavier and Amit Bhatkal and Hawau Toyin and Aman Chadha and Hisham Cholakkal and Rao Muhammad Anwer and Michael Felsberg and Jorma Laaksonen and Thamar Solorio and Monojit Choudhury and Ivan Laptev and Mubarak Shah and Salman Khan and Fahad Khan},
+      year={2024},
+      eprint={2411.16508},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2411.16508}, 
+}
+</code></pre>
+  </div>
+</section>
+-->
+
+
+<footer class="footer">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            Website adapted from the following <a href="https://mingukkang.github.io/GigaGAN/">source code</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script src="juxtapose/js/juxtapose.js"></script>
+
+<script>
+var slider;
+let origOptions = {
+    "makeResponsive": true,
+    "showLabels": true,
+    "mode": "horizontal",
+    "showCredits": true,
+    "animate": true,
+    "startingPosition": "50"
+};
+
+const juxtaposeSelector = "#juxtapose-embed";
+const transientSelector = "#juxtapose-hidden";
+
+  inputImage.src = "./static/images/".concat(name, "_input.jpg")
+  outputImage.src = "./static/images/".concat(name, "_output.jpg")
+
+  let images = [inputImage, outputImage];
+  let options = slider.options;
+  options.callback = function(obj) {
+      var newNode = document.getElementById(obj.selector.substring(1));
+      var oldNode = document.getElementById(juxtaposeSelector.substring(1));
+      console.log(obj.selector.substring(1));
+      console.log(newNode.children[0]);
+      oldNode.replaceChild(newNode.children[0], oldNode.children[0]);
+      //newNode.removeChild(newNode.children[0]);
+      
+  };
+  
+  slider = new juxtapose.JXSlider(transientSelector, images, options);
+};
+
+
+
+(function() {
+    slider = new juxtapose.JXSlider(
+        juxtaposeSelector, origImages, origOptions);
+    //document.getElementById("left-button").onclick = replaceLeft;
+    //document.getElementById("right-button").onclick = replaceRight;
+})();
+  // Get the image text
+  var imgText = document.getElementById("imgtext");
+  // Use the same src in the expanded image as the image being clicked on from the grid
+  // expandImg.src = imgs.src;
+  // Use the value of the alt attribute of the clickable image as text inside the expanded image
+  imgText.innerHTML = name;
+  // Show the container element (hidden with CSS)
+  // expandImg.parentElement.style.display = "block";
+
+$(".flip-card").click(function() {
+            console.log("fading in")
+            div_back = $(this).children().children()[1]
+            div_front = $(this).children().children()[0]
+            // console.log($(this).children("div.flip-card-back"))
+            console.log(div_back)
+            $(div_front).addClass("out");
+            $(div_front).removeClass("in");
+
+            $(div_back).addClass("in");
+            $(div_back).removeClass("out");
+
+});
+
+$(".flip-card").mouseleave(function() {
+            console.log("fading in")
+            div_back = $(this).children().children()[1]
+            div_front = $(this).children().children()[0]
+            // console.log($(this).children("div.flip-card-back"))
+            console.log(div_back)
+            $(div_front).addClass("in");
+            $(div_front).removeClass("out");
+
+            $(div_back).addClass("out");
+            $(div_back).removeClass("in");
+
+});
+
+</script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>    
+
+</body>
+</html>
