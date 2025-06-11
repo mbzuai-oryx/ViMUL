@@ -1,3 +1,3 @@
-# All Languages Matter: Evaluating LMMs on Culturally Diverse 100 Languages
+# A Culturally-diverse Multilingual Multimodal Video Benchmark & Model
 
-## Official source code for the ALM-Bench project page.
+## Official source code for the ViMUL-Bench project page.
